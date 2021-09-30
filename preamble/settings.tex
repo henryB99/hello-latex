@@ -1,0 +1,32 @@
+%---| Settings |----------------------------------------------------------------
+
+% Abbildungen
+\graphicspath{{./images}}
+
+% Titelseite
+\title{Hello world in LaTeX}
+\date{\today}
+\author{Henry Behrend}
+
+% The setcounter command can be used to set the TOC's depth to to the following
+% values (level meaning everything up to the specified section will be shown):
+%   0 - nothing
+%   1 - section level
+%   2 - subsection level
+%   3 - subsubsection level (default)
+%   4 - paragraph level
+%   5 - subparagraph level
+
+% Inhaltsverzeichnis
+\setcounter{tocdepth}{3}
+
+% Quellenverzeichnis
+\bibliography{bibliography}
+
+% Links und URLs
+\hypersetup{
+    pdfborder  = 0 0 0,
+    colorlinks = true,
+    linkcolor  = black,
+    urlcolor   = blue
+}
