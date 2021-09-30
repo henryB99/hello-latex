@@ -3,6 +3,7 @@
 % Präambel
 \input{preamble/packages.tex}
 \input{preamble/settings.tex}
+\input{preamble/commands.tex}
 
 \begin{document}
 
@@ -31,7 +32,7 @@
 % Hauptteil
 \section{Section}
 
-Hello, world!
+\HelloWorld
 
 \subsection{Subsection}
 
@@ -246,8 +247,6 @@ Additonally, citations are created by calling \texttt{autocite} instead of
 Footnotes can be created by either setting the \texttt{style} package option to
 \texttt{verbose-trad2} or any other citation style which includes footnotes for
 that matter. All available values for the \texttt{style} can be found \href{https://ctan.joethei.xyz/macros/latex/contrib/biblatex/doc/biblatex.pdf#subsection.3.3}{here}.
-
-
 
 % Quellenverzeichnis
 \newpage
