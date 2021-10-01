@@ -246,7 +246,24 @@ Additonally, citations are created by calling \texttt{autocite} instead of
 
 Footnotes can be created by either setting the \texttt{style} package option to
 \texttt{verbose-trad2} or any other citation style which includes footnotes for
-that matter. All available values for the \texttt{style} can be found \href{https://ctan.joethei.xyz/macros/latex/contrib/biblatex/doc/biblatex.pdf#subsection.3.3}{here}.
+that matter. All available values for the \texttt{style} can be found
+\href{https://ctan.joethei.xyz/macros/latex/contrib/biblatex/doc/biblatex.pdf#subsection.3.3}{here}.
+
+\newpage
+\section{Footnotes}
+
+Footnotes can be added to the current page by calling the \texttt{footnote}
+command. Additonally, the footnotes content can be referenced by assigning it a
+\texttt{label} and referencing it somewhere else with \texttt{ref}.
+In this sentence, I refer to footnote content\footnote{\label{myFootnote}Hello,
+footnotes!} in order to explain a scientific term for example.
+
+Light rays travel at $c$\footnote{\label{speedOfLight}The speed of light in a
+vacuum, defined to be $299792458\frac{m}{s}$.}.
+Referencing a footnote at some other point in the document looks like this:
+You cannot change \ref{speedOfLight}, it is constant.
+
+
 
 % Quellenverzeichnis
 \newpage
