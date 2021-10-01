@@ -56,15 +56,17 @@ Displaying math expressions and equations of any kind is effortless in \LaTeX.
 This is done by using a package for rendering maths, like \texttt{amsmath} and
 then using its \texttt{equation} or \texttt{align} environments for creating
 expressions as an extra paragraph. By wrapping the maths inside dollar signs
-(\$), you can create inline mathematical expressions. \\
-My favorite function is
-$f(x) = \frac{1}{2} \left\lfloor
-    mod\left(
-        \left\lfloor \frac{y}{17} \right\rfloor
-        2^{-17\left\lfloor x \right\rfloor} -
-        mod\left( \left\lfloor y \right\rfloor, 17 \right), 2
-    \right)
-\right\rfloor$. \\
+(\$), you can create inline mathematical expressions.
+\begin{center}
+    My favorite function is
+    $f(x) = \frac{1}{2} \left\lfloor
+        mod\left(
+            \left\lfloor \frac{y}{17} \right\rfloor
+            2^{-17\left\lfloor x \right\rfloor} -
+            mod\left( \left\lfloor y \right\rfloor, 17 \right), 2
+        \right)
+    \right\rfloor$.
+\end{center}
 Writing more complex or highly nested equations like this can be a bit
 cumbersome, so for that case using the
 \href{https://latexeditor.lagrida.com/} {Online LaTeX Equation Editor}
@@ -451,6 +453,8 @@ used to create tables that span multiple pages. A solution for a table spanning
 too many columns would be to display it rotated by 90 degrees counterclockwise.
 This can be achieved with the \texttt{rotating} package by creating landscape
 tables.
+
+\subsection{Importing tables from CSV files}
 
 % Quellenverzeichnis
 \newpage
