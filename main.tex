@@ -454,7 +454,34 @@ too many columns would be to display it rotated by 90 degrees counterclockwise.
 This can be achieved with the \texttt{rotating} package by creating landscape
 tables.
 
-\subsection{Importing tables from CSV files}
+\subsection{Generating tables from CSV files}
+
+\begin{table}[h!]
+    \begin{center}
+        \pgfplotstabletypeset[
+            multicolumn names,
+            col sep=comma,
+            display columns/0/.style={
+                column name=$Value 1$,
+                column type={S}, string type
+            },
+            display columns/1/.style={
+                column name=$Value 2$,
+                column type={S}, string type
+            },
+            every head row/.style={
+                before row={\toprule},
+                after row={
+                    \si{\ampere} & \si{\volt} \\
+                    \midrule
+                }
+            },
+            every last row/.style={after row=\bottomrule}
+        ]{./tables/table.csv}
+        \caption{An auto-generated table from a CSV file.}
+        \label{tab:generated}
+    \end{center}
+\end{table}
 
 % Quellenverzeichnis
 \newpage
